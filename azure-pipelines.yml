@@ -1,5 +1,5 @@
 trigger:
-- master  # Defina a branch que deve acionar a pipeline
+- master 
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -7,5 +7,5 @@ pool:
 steps:
 - script: |
     pip install -r requirements.txt
-    python manage.py test
+    python .\api_django_app\manage.py test
   displayName: 'Run Unit Tests'
