@@ -8,4 +8,4 @@ steps:
 - script: |
     pip install -r requirements.txt
     python .\api_django_app\manage.py test
-  displayName: 'Run Unit Tests'
+  displayName: 'Executando testes unitários!'
